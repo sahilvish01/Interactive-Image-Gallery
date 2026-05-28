@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black; 
+    color: white;
+    padding: 20px auto;
+}
+
+.heading
+{
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px auto;
+    /* background-color: #ff0000; */
+    min-width: 650px;
+    /* width:700px; */
+    display: block;
+}
+
+.ZoomIn
+{
+    background-color: #000000;
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.cross
+{
+    background-color: #47474700;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.swapBtn
+{
+    height: 80px;
+    width: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    cursor: pointer;
+}
+
+.btn1
+{
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.btn2
+{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.swapBtn:hover
+{
+    background-color: #00000068;
+}
+
+.cross:hover
+{
+    color: #00000068;
+}
+
+.grid
+{
+    margin: 20px auto;
+    /* background-color: #fff; */
+    width: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 25px;
+}
+
+.image
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image:hover
+{
+    opacity: 0.5;
+}
+
+
+@media (width > 1000px) {
+
+    .grid
+    {
+        width:1000px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .ZoomIn
+    {
+        height: 700px;
+        width: 700px;
+    }
+}
+
+@media (width > 1400px) {
+
+    .grid
+    {
+        width:1400px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+        
+}
