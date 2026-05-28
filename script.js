@@ -4,31 +4,22 @@ let cross = document.querySelector(".cross")
 let Images = document.querySelectorAll("img")
 
 let currentImage = 0;
-// console.dir(Images);
-// console.log(Images["0"].getAttribute(`src`));
 
 let arrImg = [...grid.children]
-
-console.log(arrImg);
 
 grid.addEventListener("click", (e) =>
 {
 
-    // console.log(e.target);
     
-    console.log(arrImg.indexOf(e.target));
     if(e.target.tagName != "IMG")
     {
         return;
     }
 
-    // console.log("clicked");
 
     ZoomIn.style.display = "block"
     ZoomIn.style.backgroundImage = `url(${e.target.getAttribute("src")})`;
-    // currentImage = Number(`${e.target.getAttribute("id")}`)
     currentImage = arrImg.indexOf(e.target);
-    console.log(currentImage);
     
 })
 
