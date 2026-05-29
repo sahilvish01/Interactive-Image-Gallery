@@ -18,9 +18,7 @@ body
     font-size: 4rem;
     text-align: center;
     margin: 40px auto;
-    /* background-color: #ff0000; */
     min-width: 650px;
-    /* width:700px; */
     display: block;
 }
 
@@ -97,7 +95,6 @@ body
 .grid
 {
     margin: 20px auto;
-    /* background-color: #fff; */
     width: 650px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,6 +108,7 @@ body
     width: 300px;
     border-radius: 10px;
     cursor: pointer;
+    object-fit: cover;          
 }
 
 .image:hover
