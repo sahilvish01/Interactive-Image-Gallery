@@ -10,23 +10,24 @@ body
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: black; 
     color: white;
-    padding: 20px auto;
+    padding: 2% auto;
 }
 
 .heading
 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
-    margin: 40px auto;
-    min-width: 650px;
+    margin: 2% auto;
+    min-width: 100%;
     display: block;
+    padding: 10px;
 }
 
 .ZoomIn
 {
     background-color: #000000;
-    width: 600px;
-    height: 600px;
+    width: 90svw;
+    height: 90svw;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -41,13 +42,13 @@ body
 .cross
 {
     background-color: #47474700;
-    height: 50px;
-    width: 50px;
+    height: 5%;
+    width: 5%;
     border: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 3rem;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -57,13 +58,13 @@ body
 
 .swapBtn
 {
-    height: 80px;
-    width: 60px;
+    height: 20%;
+    width: 15%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 3rem;
     position: absolute;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
     cursor: pointer;
@@ -95,7 +96,7 @@ body
 .grid
 {
     margin: 20px auto;
-    width: 650px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -104,8 +105,8 @@ body
 
 .image
 {
-    height: 300px;
-    width: 300px;
+    height: 45svw;
+    width: 45svw;
     border-radius: 10px;
     cursor: pointer;
     object-fit: cover;          
@@ -117,18 +118,49 @@ body
 }
 
 
+
+@media (width > 650px) {
+    
+    .ZoomIn
+    {
+        height: 600px;
+        width: 600px;
+    }
+
+    .swapBtn
+    {
+        height: 80px;
+        width: 60px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        position: absolute;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+        cursor: pointer;
+    }
+
+
+}
+
 @media (width > 1000px) {
 
     .grid
     {
-        width:1000px;
+        width:100%;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .ZoomIn
+    
+
+    .image
     {
-        height: 700px;
-        width: 700px;
+        height: 30svw;
+        width: 30svw;
+        border-radius: 10px;
+        cursor: pointer;
+        object-fit: cover;          
     }
 }
 
@@ -136,8 +168,17 @@ body
 
     .grid
     {
-        width:1400px;
+        width:fit-content;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1%;
+    }
+    .image
+    {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        object-fit: cover;          
     }
         
 }
