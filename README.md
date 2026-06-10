@@ -19,7 +19,7 @@ A fully responsive, interactive Image Gallery featuring a custom Lightbox (modal
 * **Event Delegation:** Optimized JavaScript event listeners attached to parent containers for better memory management.
 
 ## 🌐 Live Demo
-* **View the Live Project here:** [Image Gallery](https://sahilvish01.github.io/Image-Gallery-Project/)
+* **View the Live Project here:** [Image Gallery](https://sahilvish01.github.io/CodeAlpha_ImageGallery/)
 
 ## 🚀 Setup & Installation (Local Development)
 
